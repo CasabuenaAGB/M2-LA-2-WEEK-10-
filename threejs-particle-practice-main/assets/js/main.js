@@ -42,7 +42,10 @@ function particles() {
 
 function animateParticles() {
     starGeo.verticesNeedUpdate = true;
-    stars.position.y -= 0.09;
+    stars.position.y -= 0.9;
+  if(stars.position.y < -200) {
+      stars.position.y = 100;
+  }
   }
 
 function cube() {
